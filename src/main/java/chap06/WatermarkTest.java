@@ -1,7 +1,7 @@
 package chap06;
 
-import chap5.ClickSource;
-import chap5.Event;
+import chap05.ClickSource;
+import chap05.Event;
 import org.apache.flink.api.common.eventtime.SerializableTimestampAssigner;
 import org.apache.flink.api.common.eventtime.WatermarkStrategy;
 import org.apache.flink.streaming.api.environment.StreamExecutionEnvironment;

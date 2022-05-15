@@ -2,9 +2,24 @@
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
     <remote-repository>
+      <option name="id" value="virtual-public-repos" />
+      <option name="name" value="virtual-public-repos" />
+      <option name="url" value="http://mvn.dianpingoa.com/repository/dprepo" />
+    </remote-repository>
+    <remote-repository>
       <option name="id" value="central" />
       <option name="name" value="Central Repository" />
       <option name="url" value="https://repo.maven.apache.org/maven2" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="central" />
+      <option name="name" value="Central Repository" />
+      <option name="url" value="http://mvn.dianpingoa.com/repository/dprepo" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="internal-snapshots" />
+      <option name="name" value="internal repository for snapshots artifacts" />
+      <option name="url" value="http://mvn.dianpingoa.com/repository/dprepo" />
     </remote-repository>
     <remote-repository>
       <option name="id" value="central" />
@@ -15,6 +30,11 @@
       <option name="id" value="jboss.community" />
       <option name="name" value="JBoss Community repository" />
       <option name="url" value="https://repository.jboss.org/nexus/content/repositories/public/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="internal-releases" />
+      <option name="name" value="internal repository for released artifacts" />
+      <option name="url" value="http://mvn.dianpingoa.com/repository/dprepo" />
     </remote-repository>
   </component>
 </project>
