@@ -59,13 +59,13 @@ WatermarkGenerator<T> createWatermarkGenerator(WatermarkGeneratorSupplier.Contex
 1. 滚动窗口(Tumbling Window)
    ![img_1.png](img_1.png)
    滚动窗口有固定的大小,是一种对数据进行的“均匀切片”的划分方式.
-1. 滑动窗口(Sliding Window)
+2. 滑动窗口(Sliding Window)
    ![img_2.png](img_2.png)
    与滚动窗口的区别在于,窗口之间不是首尾相接的.定义滑动窗口的参数有两个:窗口大小(window size)和滑动步长(window slide)
-1. 会话窗口(Session Window)
+3. 会话窗口(Session Window)
    ![img_3.png](img_3.png)
    基于时间定义.
-3. 全局窗口(Global Window)
+4. 全局窗口(Global Window)
    ![img_4.png](img_4.png)
 
 ### 窗口API概览
@@ -86,73 +86,73 @@ stream.keyBy(<key selector>)
 #### 时间窗口
 1. 滚动处理时间窗口
     * .of()重载方法可以传入两个Time类型参数:size和offset,size是窗口大小,offset是窗口起始点的偏移量.
-```Java
-stream.keyBy(...)
-      .window(TumblingProcessingTimeWindows.of(Time.second(5)))
-      .aggregate(...)
-```
-1. 滑动处理时间窗口
+    ```Java
+    stream.keyBy(...)
+          .window(TumblingProcessingTimeWindows.of(Time.second(5)))
+          .aggregate(...)
+    ```
+2. 滑动处理时间窗口
     * .of()方法传入两个Time类型参数:size和slide,size表示滑动窗口大小,后者表示滑动窗口的滑动步长.同样可以追加第三个参数,用于指定窗口起始点的偏移量.
-```Java
-stream.keyBy(...)
-      .window()
-      .aggregate(SlidingProcessingTimeWindows.of(Time.seconds(10), Time
-      .seconds(5)))
-```
-1. 处理时间会话窗口
+    ```Java
+    stream.keyBy(...)
+          .window()
+          .aggregate(SlidingProcessingTimeWindows.of(Time.seconds(10), Time
+          .seconds(5)))
+    ```
+3. 处理时间会话窗口
     * .withGap()方法需要传入一个Time类型的参数size,表示会话的超时时间.
     * .withDynamicGap()方法需要传入一个SessionWindowTimeGapExtractor作为参数.
-```Java
-stream.keyBy(...)
-      .window(ProcessingTimeSessionWindows.withGap(Time.seconds(10)))
-      .aggregate(...)
-```
-```Java
-    .window(ProcessingTimeSessionWindows.withDynamicGap(new SessionWindowTimeGapExtractor<Tuple2<String, Long>>() {
-        @Override
-        public long extract(Tuple2<String, Long> element) {
-        // 提取 session gap 值返回, 单位毫秒
-            return element.f0.length() * 1000;
-        }
-    }))
-```
-1. 滚动事件时间窗口
-```Java
-stream.keyBy(...)
-      .window(TumblingEventTimeWindows.of(Time.seconds(5)))
-      .aggregate(...)
-```
-1. 滑动事件时间窗口
-```Java
-stream.keyBy(...)
-      .window(SlidingEventTimeWindows.of(Time.seconds(10), Time.seconds(5)))
-      .aggregate(...)
-```
-1. 事件时间会话窗口
-```Java
-stream.keyBy(...)
-      .window(EventTimeSessionWindows.withGap(Time.seconds(10)))
-      .aggregate(...)
-```
+    ```Java
+    stream.keyBy(...)
+          .window(ProcessingTimeSessionWindows.withGap(Time.seconds(10)))
+          .aggregate(...)
+    ```
+    ```Java
+        .window(ProcessingTimeSessionWindows.withDynamicGap(new SessionWindowTimeGapExtractor<Tuple2<String, Long>>() {
+            @Override
+            public long extract(Tuple2<String, Long> element) {
+            // 提取 session gap 值返回, 单位毫秒
+                return element.f0.length() * 1000;
+            }
+        }))
+    ```
+4. 滚动事件时间窗口
+    ```Java
+    stream.keyBy(...)
+          .window(TumblingEventTimeWindows.of(Time.seconds(5)))
+          .aggregate(...)
+    ```
+5. 滑动事件时间窗口
+    ```Java
+    stream.keyBy(...)
+          .window(SlidingEventTimeWindows.of(Time.seconds(10), Time.seconds(5)))
+          .aggregate(...)
+    ```
+6. 事件时间会话窗口
+    ```Java
+    stream.keyBy(...)
+          .window(EventTimeSessionWindows.withGap(Time.seconds(10)))
+          .aggregate(...)
+    ```
 
 #### 计数窗口
 1. 滚动计数窗口
-```Java
-stream.keyBy(...)
-      .countWindow(10)
-```
-1. 滑动计数窗口
-```Java
-stream.keyBy(...)
-      .countWindow(10，3)
-```
+    ```Java
+    stream.keyBy(...)
+          .countWindow(10)
+    ```
+2. 滑动计数窗口
+    ```Java
+    stream.keyBy(...)
+          .countWindow(10，3)
+    ```
 
 #### 全局窗口
 * 全局窗口需要自行定义触发器才能实现窗口计算.
-```Java
-stream.keyBy(...)
-      .window(GlobalWindows.create());
-```
+    ```Java
+    stream.keyBy(...)
+          .window(GlobalWindows.create());
+    ```
 
 ### 窗口函数(Window Functions)
 ![img_5.png](img_5.png)
@@ -166,13 +166,97 @@ stream.keyBy(...)
         * add():将输入的元素添加到累加器中.
         * getResult():从累加器中提取聚合的输出结果.
         * merge():合并两个累加器.
-```Java
-public interface AggregateFunction<IN, ACC, OUT> extends Function, Serializable
-{
-    ACC createAccumulator();
-    ACC add(IN value, ACC accumulator);
-    OUT getResult(ACC accumulator);
-    ACC merge(ACC a, ACC b);
-}
-```
+    ```Java
+    public interface AggregateFunction<IN, ACC, OUT> extends Function, Serializable
+    {
+        ACC createAccumulator();
+        ACC add(IN value, ACC accumulator);
+        OUT getResult(ACC accumulator);
+        ACC merge(ACC a, ACC b);
+    }
+    ```
 #### 全窗口函数(full window functions)
+* 全窗口函数需要先收集窗口中的数据,并在内部缓存起来,等到要输出结果的时候再取出数据进行计算.
+1. 窗口函数(WindowFunction)
+   * 当窗口到达结束时间需要出发计算时,会调用apply方法.
+       ```Java
+       stream.keyBy(<key selector>)
+             .window(<window assigner>)
+             .apply(new MyWindowFunction());
+       ```
+2. 处理窗口函数(ProcessWindowFunction)
+   * ProcessWindowFunction是Window API中最底层的通用窗口函数接口.
+   * ProcessWindowFunction可以获得一个“上下文对象”(Context),不仅可以获取窗口信息,还可以访问当前的时间和状态信息.
+3. 增量聚合和全窗口函数的结合使用
+    ```Java
+    // ReduceFunction 与 WindowFunction 结合
+    public <R> SingleOutputStreamOperator<R> reduce(
+    ReduceFunction<T> reduceFunction, WindowFunction<T, R, K, W> function)
+    
+    // ReduceFunction 与 ProcessWindowFunction 结合
+    public <R> SingleOutputStreamOperator<R> reduce(ReduceFunction<T> reduceFunction, ProcessWindowFunction<T, R, K, W> function)
+    
+    // AggregateFunction 与 WindowFunction 结合
+    public <ACC, V, R> SingleOutputStreamOperator<R> aggregate(
+    AggregateFunction<T, ACC, V> aggFunction, WindowFunction<V, R, K, W> windowFunction)
+    
+    // AggregateFunction 与 ProcessWindowFunction 结合
+    public <ACC, V, R> SingleOutputStreamOperator<R> aggregate(AggregateFunction<T, ACC, V> aggFunction, ProcessWindowFunction<V, R, K, W> windowFunction)
+    ```
+
+### 其他API
+1. 触发器(Trigger)
+    * 基于WindowedStream调用.trigger()方法,就可以传入一个自定义窗口触发器(Trigger)
+    * 所有事件时间窗口默认触发器是EventTimeTrigger,类似的还有ProcessingTimeTrigger和CountTrigger.
+    * Trigger是一个抽象类,自定义时必须实现下面四个抽象方法:
+        * onElement():窗口中每到来一个元素,都会调用这个方法.
+        * onEventTime():当注册的事件时间定时器触发时,调用这个方法.
+        * onProcessingTime():当注册的处理时间定时器触发时,调用这个方法.
+        * clear():当窗口关闭销毁时,调用这个方法.
+    * 上述前三个方法返回类型都是TriggerResult,这是一个枚举类型:
+        * CONTINUE(继续):什么都不做
+        * FIRE(触发):触发计算,输出结果
+        * PURGE(清除):清空窗口中的所有数据,销毁窗口
+        * FIRE_AND_PURGE(触发并清除):触发计算输出结果,并清除窗口
+    ```Java
+    stream.keyBy(...)
+          .window(...)
+          .trigger(new MyTrigger())
+    ```
+2. 移除器(Evictor)
+    * 用来定义移除某些数据的逻辑.基于WindowedStream调用.evictor()方法,就可以传入一个自定义的移除器.
+    * Evictor接口定义了两个方法:
+        * evictBefore():定义执行窗口函数之前的移除数据操作.
+        * evictAfter():定义执行窗口函数之后的移除数据操作.
+    ```Java
+    stream.keyBy(...)
+          .window(...)
+          .evictor(new MyEvictor())
+    ```
+3. 允许延迟(Allowed Lateness)
+    * 基于WindowedStream调用.allowedLateness()方法,传入一个Time类型的延迟时间,就可以表示允许这段时间内的延迟数据.
+    ```Java
+    stream.keyBy(...)
+          .window(TumblingEventTimeWindows.of(Time.hours(1)))
+          .allowedLateness(Time.minutes(1))
+    ```
+4. 将迟到数据放入侧输入流
+    * 基于WindowedStream调用.sideOutputLateData()方法.
+    ```Java
+    DataStream<Event> stream = env.addSource(...);
+    OutputTag<Event> outputTag = new OutputTag<Event>("late") {};
+    stream.keyBy(...)
+          .window(TumblingEventTimeWindows.of(Time.hours(1)))
+          .sideOutputLateData(outputTag)
+    ```
+    * 基于窗口处理完成之后的DataStream,调用.getSideOutput()方法,传入对应的输出标签,就可以获取迟到数据所在的流.
+    ```Java
+    SingleOutputStreamOperator<AggResult> winAggStream = stream.keyBy(...)
+         .window(TumblingEventTimeWindows.of(Time.hours(1)))
+         .sideOutputLateData(outputTag)
+         .aggregate(new MyAggregateFunction())
+    DataStream<Event> lateStream = winAggStream.getSideOutput(outputTag);
+    ```
+
+### 窗口生命周期
+![img_6.png](img_6.png)

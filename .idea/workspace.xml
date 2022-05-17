@@ -5,23 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b5c83fa-e0d9-4fba-95dd-478c8825c6c2" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap06/WindowAggregateFunctionExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap06/WindowReduceExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap06/img.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap06/img_1.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap06/img_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap06/img_3.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap06/img_4.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap06/img_5.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/chap06/WindowAggregateFunctionExample$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/chap06/WindowAggregateFunctionExample$AvgPv.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/chap06/WindowAggregateFunctionExample.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/chap06/WindowReduceExample$1.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/chap06/WindowReduceExample$2.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/chap06/WindowReduceExample$3.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/target/classes/chap06/WindowReduceExample.class" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap06/TriggerExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap06/UrlViewCount.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap06/UrlViewCountExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap06/UvCountByWindowExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap06/WatermarkTest2.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap06/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/chap06/note.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -83,13 +72,16 @@
   }
 }</component>
   <component name="RecentsManager">
+    <key name="CreateClassDialog.RecentsKey">
+      <recent name="chap06" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="chap06" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.WindowAggregateFunctionExample">
-    <configuration name="EmitWatermarkInSourceFunction" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap06.EmitWatermarkInSourceFunction" />
+  <component name="RunManager" selected="应用程序.TriggerExample">
+    <configuration name="TriggerExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap06.TriggerExample" />
       <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -102,13 +94,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TransFunctionUDFTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap05.TransFunctionUDFTest" />
-      <module name="Flink" />
+    <configuration name="UrlViewCountExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap06.UrlViewCountExample" />
+      <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap05.*" />
+          <option name="PATTERN" value="chap06.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,9 +108,23 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WatermarkTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap06.WatermarkTest" />
-      <module name="Flink" />
+    <configuration name="UvCountByWindowExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap06.UvCountByWindowExample" />
+      <module name="LearnFlink" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="chap06.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="WatermarkTest2" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap06.WatermarkTest2" />
+      <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
@@ -132,20 +138,6 @@
     </configuration>
     <configuration name="WindowAggregateFunctionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="chap06.WindowAggregateFunctionExample" />
-      <module name="LearnFlink" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="chap06.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration name="WindowReduceExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap06.WindowReduceExample" />
       <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
@@ -182,9 +174,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="应用程序.TriggerExample" />
+        <item itemvalue="应用程序.WatermarkTest2" />
+        <item itemvalue="应用程序.UrlViewCountExample" />
+        <item itemvalue="应用程序.UvCountByWindowExample" />
         <item itemvalue="应用程序.WindowAggregateFunctionExample" />
-        <item itemvalue="应用程序.WindowReduceExample" />
-        <item itemvalue="应用程序.EmitWatermarkInSourceFunction" />
       </list>
     </recent_temporary>
   </component>
@@ -197,6 +191,12 @@
       <updated>1652624538887</updated>
     </task>
     <servers />
+  </component>
+  <component name="UnknownFeatures">
+    <option featureType="dependencySupport" implementationName="java:org.apache.kafka:kafka_2.13" />
+    <option featureType="dependencySupport" implementationName="java:com.google.protobuf:protobuf-java" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.hadoop:hadoop-common" />
+    <option featureType="dependencySupport" implementationName="java:org.apache.kafka:kafka-clients" />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
     <option name="TAB_STATES">
