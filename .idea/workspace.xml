@@ -5,34 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b5c83fa-e0d9-4fba-95dd-478c8825c6c2" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap07/EventTimeTimerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap07/KeyedProcessTopN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap07/ProcessAllWindowTopN.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap07/ProcessFunctionExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap07/ProcessingTimeTimerTest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/notes/chap07/note.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/BillCheckExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/CoGroupExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/CoMapExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/IntervalJoinExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/SplitStreamByFilter.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/SplitStreamByOutputTag.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/UnionExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/WindowJoinExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/notes/chap08/chap08.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap05/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/chap05/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap05/img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/chap05/img_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap05/img_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/chap05/img_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap05/img_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/chap05/img_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap05/img_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/chap05/img_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap05/img_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/chap05/img_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap05/img_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/chap05/img_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap05/img_7.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/chap05/img_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap05/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/chap05/note.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap06/img.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/chap06/img.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap06/img_1.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/chap06/img_1.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap06/img_2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/chap06/img_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap06/img_3.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/chap06/img_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap06/img_4.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/chap06/img_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap06/img_5.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/chap06/img_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap06/img_6.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/chap06/img_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/chap06/note.md" beforeDir="false" afterPath="$PROJECT_DIR$/src/notes/chap06/note.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chap06/TriggerExample$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chap06/TriggerExample$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chap06/TriggerExample$MyTrigger.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chap06/TriggerExample$MyTrigger.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chap06/TriggerExample$WindowResult.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chap06/TriggerExample$WindowResult.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/chap06/TriggerExample.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/chap06/TriggerExample.class" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -97,18 +79,24 @@
     <key name="CreateClassDialog.RecentsKey">
       <recent name="chap06" />
     </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/notes/chap06" />
+      <recent name="$PROJECT_DIR$/src/notes/chap05" />
+      <recent name="$PROJECT_DIR$/src/notes" />
+      <recent name="$PROJECT_DIR$/src" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
       <recent name="chap06" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.KeyedProcessTopN">
-    <configuration name="EventTimeTimerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap07.EventTimeTimerTest" />
+  <component name="RunManager" selected="应用程序.CoGroupExample">
+    <configuration name="BillCheckExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap08.BillCheckExample" />
       <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap07.*" />
+          <option name="PATTERN" value="chap08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -116,13 +104,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="KeyedProcessTopN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap07.KeyedProcessTopN" />
+    <configuration name="CoGroupExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap08.CoGroupExample" />
       <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap07.*" />
+          <option name="PATTERN" value="chap08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -130,13 +118,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProcessAllWindowTopN" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap07.ProcessAllWindowTopN" />
+    <configuration name="CoMapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap08.CoMapExample" />
       <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap07.*" />
+          <option name="PATTERN" value="chap08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -144,13 +132,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProcessFunctionExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap07.ProcessFunctionExample" />
+    <configuration name="IntervalJoinExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap08.IntervalJoinExample" />
       <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap07.*" />
+          <option name="PATTERN" value="chap08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -158,13 +146,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="ProcessingTimeTimerTest" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap07.ProcessingTimeTimerTest" />
+    <configuration name="WindowJoinExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap08.WindowJoinExample" />
       <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap07.*" />
+          <option name="PATTERN" value="chap08.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -196,11 +184,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.KeyedProcessTopN" />
-        <item itemvalue="应用程序.ProcessAllWindowTopN" />
-        <item itemvalue="应用程序.EventTimeTimerTest" />
-        <item itemvalue="应用程序.ProcessingTimeTimerTest" />
-        <item itemvalue="应用程序.ProcessFunctionExample" />
+        <item itemvalue="应用程序.CoGroupExample" />
+        <item itemvalue="应用程序.IntervalJoinExample" />
+        <item itemvalue="应用程序.WindowJoinExample" />
+        <item itemvalue="应用程序.BillCheckExample" />
+        <item itemvalue="应用程序.CoMapExample" />
       </list>
     </recent_temporary>
   </component>
