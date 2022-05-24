@@ -4,13 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b5c83fa-e0d9-4fba-95dd-478c8825c6c2" name="Changes" comment="learn union、join、connect">
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap09/AverageTimestampExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap09/BroadcastStateExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap09/BufferingSinkExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap09/FakeWindowExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap09/PeriodicPvExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap09/TwoStreamFullJoinExample.java" afterDir="false" />
+    <list default="true" id="5b5c83fa-e0d9-4fba-95dd-478c8825c6c2" name="Changes" comment="learn state">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -204,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653209194879</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="learn state">
+      <created>1653401090440</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1653401090440</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -226,6 +227,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="learn union、join、connect" />
-    <option name="LAST_COMMIT_MESSAGE" value="learn union、join、connect" />
+    <MESSAGE value="learn state" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn state" />
   </component>
 </project>
