@@ -4,16 +4,13 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="5b5c83fa-e0d9-4fba-95dd-478c8825c6c2" name="Changes" comment="Changes">
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/BillCheckExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/CoGroupExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/CoMapExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/IntervalJoinExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/SplitStreamByFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/SplitStreamByOutputTag.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/UnionExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/chap08/WindowJoinExample.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/notes/chap08/chap08.md" afterDir="false" />
+    <list default="true" id="5b5c83fa-e0d9-4fba-95dd-478c8825c6c2" name="Changes" comment="learn union、join、connect">
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap09/AverageTimestampExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap09/BroadcastStateExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap09/BufferingSinkExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap09/FakeWindowExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap09/PeriodicPvExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap09/TwoStreamFullJoinExample.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -89,14 +86,14 @@
       <recent name="chap06" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.CoGroupExample">
-    <configuration name="BillCheckExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap08.BillCheckExample" />
+  <component name="RunManager" selected="应用程序.BroadcastStateExample">
+    <configuration name="AverageTimestampExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap09.AverageTimestampExample" />
       <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap08.*" />
+          <option name="PATTERN" value="chap09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -104,13 +101,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CoGroupExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap08.CoGroupExample" />
+    <configuration name="BroadcastStateExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap09.BroadcastStateExample" />
       <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap08.*" />
+          <option name="PATTERN" value="chap09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -118,13 +115,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="CoMapExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap08.CoMapExample" />
+    <configuration name="BufferingSinkExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap09.BufferingSinkExample" />
       <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap08.*" />
+          <option name="PATTERN" value="chap09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -132,13 +129,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="IntervalJoinExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap08.IntervalJoinExample" />
+    <configuration name="FakeWindowExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap09.FakeWindowExample" />
       <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap08.*" />
+          <option name="PATTERN" value="chap09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -146,13 +143,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="WindowJoinExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap08.WindowJoinExample" />
+    <configuration name="TwoStreamFullJoinExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap09.TwoStreamFullJoinExample" />
       <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap08.*" />
+          <option name="PATTERN" value="chap09.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -184,11 +181,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.CoGroupExample" />
-        <item itemvalue="应用程序.IntervalJoinExample" />
-        <item itemvalue="应用程序.WindowJoinExample" />
-        <item itemvalue="应用程序.BillCheckExample" />
-        <item itemvalue="应用程序.CoMapExample" />
+        <item itemvalue="应用程序.BroadcastStateExample" />
+        <item itemvalue="应用程序.BufferingSinkExample" />
+        <item itemvalue="应用程序.AverageTimestampExample" />
+        <item itemvalue="应用程序.FakeWindowExample" />
+        <item itemvalue="应用程序.TwoStreamFullJoinExample" />
       </list>
     </recent_temporary>
   </component>
@@ -200,6 +197,14 @@
       <option name="presentableId" value="Default" />
       <updated>1652624538887</updated>
     </task>
+    <task id="LOCAL-00001" summary="learn union、join、connect">
+      <created>1653209194879</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1653209194879</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -218,5 +223,9 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="learn union、join、connect" />
+    <option name="LAST_COMMIT_MESSAGE" value="learn union、join、connect" />
   </component>
 </project>

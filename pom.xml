@@ -81,6 +81,14 @@
             <version>2.4.0</version>
             <scope>${provided.scope}</scope>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.apache.flink/flink-statebackend-rocksdb -->
+        <dependency>
+            <groupId>org.apache.flink</groupId>
+            <artifactId>flink-statebackend-rocksdb</artifactId>
+            <version>1.15.0</version>
+            <scope>test</scope>
+        </dependency>
+
 
     </dependencies>
 
