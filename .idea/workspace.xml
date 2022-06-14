@@ -5,7 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="5b5c83fa-e0d9-4fba-95dd-478c8825c6c2" name="Changes" comment="learn state">
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap11/AppendQueryExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap11/CumulateWindowExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap11/TableExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap11/TableToStreamExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap11/WindowTopNExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap12/LoginEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap12/LoginFailDetect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap12/NFAExample.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap12/OrderEvent.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap12/OrderTimeoutDetect.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap12/State.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/chap12/Transition.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/log4j.properties" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,12 +36,17 @@
     <option name="RECENT_TEMPLATES">
       <list>
         <option value="Class" />
+        <option value="Enum" />
       </list>
     </option>
   </component>
   <component name="Git.Settings">
     <branch-grouping />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="HighlightingSettingsPerFile">
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-slf4j-impl/2.17.1/log4j-slf4j-impl-2.17.1.jar!/org/apache/logging/slf4j/EventDataConverter.class" root0="SKIP_INSPECTION" />
+    <setting file="jar://$MAVEN_REPOSITORY$/org/apache/logging/log4j/log4j-slf4j-impl/2.17.1/log4j-slf4j-impl-2.17.1.jar!/org/apache/logging/slf4j/Log4jLoggerFactory.class" root0="SKIP_INSPECTION" />
   </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
@@ -61,13 +80,14 @@
     &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;last_opened_file_path&quot;: &quot;/Users/jerrywang/Documents/GithRepo/LearnFlink&quot;,
     &quot;project.structure.last.edited&quot;: &quot;库&quot;,
-    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
-    &quot;project.structure.side.proportion&quot;: &quot;0.0&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settings.project.maven.repository.indices&quot;
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.38275862&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.IDE.editor.colors.配色方案字体&quot;
   }
 }</component>
   <component name="RecentsManager">
     <key name="CreateClassDialog.RecentsKey">
+      <recent name="chap12" />
       <recent name="chap06" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
@@ -80,14 +100,14 @@
       <recent name="chap06" />
     </key>
   </component>
-  <component name="RunManager" selected="应用程序.BroadcastStateExample">
-    <configuration name="AverageTimestampExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap09.AverageTimestampExample" />
+  <component name="RunManager" selected="应用程序.NFAExample">
+    <configuration name="CumulateWindowExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap11.CumulateWindowExample" />
       <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap09.*" />
+          <option name="PATTERN" value="chap11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -95,13 +115,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BroadcastStateExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap09.BroadcastStateExample" />
+    <configuration name="LoginFailDetect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap12.LoginFailDetect" />
       <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap09.*" />
+          <option name="PATTERN" value="chap12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -109,13 +129,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="BufferingSinkExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap09.BufferingSinkExample" />
+    <configuration name="NFAExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap12.NFAExample" />
       <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap09.*" />
+          <option name="PATTERN" value="chap12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -123,13 +143,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FakeWindowExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap09.FakeWindowExample" />
+    <configuration name="OrderTimeoutDetect" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap12.OrderTimeoutDetect" />
       <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap09.*" />
+          <option name="PATTERN" value="chap12.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -137,13 +157,13 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="TwoStreamFullJoinExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
-      <option name="MAIN_CLASS_NAME" value="chap09.TwoStreamFullJoinExample" />
+    <configuration name="WindowTopNExample" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="chap11.WindowTopNExample" />
       <module name="LearnFlink" />
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
       <extension name="coverage">
         <pattern>
-          <option name="PATTERN" value="chap09.*" />
+          <option name="PATTERN" value="chap11.*" />
           <option name="ENABLED" value="true" />
         </pattern>
       </extension>
@@ -175,11 +195,11 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="应用程序.BroadcastStateExample" />
-        <item itemvalue="应用程序.BufferingSinkExample" />
-        <item itemvalue="应用程序.AverageTimestampExample" />
-        <item itemvalue="应用程序.FakeWindowExample" />
-        <item itemvalue="应用程序.TwoStreamFullJoinExample" />
+        <item itemvalue="应用程序.NFAExample" />
+        <item itemvalue="应用程序.OrderTimeoutDetect" />
+        <item itemvalue="应用程序.LoginFailDetect" />
+        <item itemvalue="应用程序.WindowTopNExample" />
+        <item itemvalue="应用程序.CumulateWindowExample" />
       </list>
     </recent_temporary>
   </component>
@@ -205,7 +225,14 @@
       <option name="project" value="LOCAL" />
       <updated>1653401090440</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="learn state">
+      <created>1653402598462</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1653402598462</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="UnknownFeatures">
@@ -229,5 +256,9 @@
     <MESSAGE value="learn union、join、connect" />
     <MESSAGE value="learn state" />
     <option name="LAST_COMMIT_MESSAGE" value="learn state" />
+  </component>
+  <component name="XSLT-Support.FileAssociations.UIState">
+    <expand />
+    <select />
   </component>
 </project>
